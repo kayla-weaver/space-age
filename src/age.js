@@ -5,10 +5,10 @@ export default class Age {
         this.mars = mars;
         this.jupiter =  jupiter;
     }
-    returnLineArray(age){
+    returnLineArrayMercury(age){
         let lineArray = [];
         if (age === ""){
-            return lineArray;
+            return lineArray*.24;
         }else  {
             return "meow";
         }
