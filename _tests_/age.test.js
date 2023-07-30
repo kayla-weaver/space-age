@@ -1,4 +1,5 @@
 import {Person} from "../src/age.js";
+import {YearsPassed} from "../src/age.js";
 
 describe ("Person",() => {
     it ("should create a person class with an age value", () => {
@@ -27,11 +28,22 @@ it ("should return jupiter age at current value", () => {
 });
 })
 
+describe ("YearsPassed",() => {
+    it ("should create a YearsPassed class with value of years passed", () => {
+        const user = new Person(25);
+        expect(user.age).toBe(25);
+    })
+     });
 
 
 
-// Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
-// Returns their age in Venus years. (A Venus year is .62 Earth years.)
-// Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
-// Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+
+
+
+
 // Determines how many years have passed on each planet since a past birthday. For example, if a user is 56 and we want to calculate how many years have passed since their 43 birthday, we would find the following results:
+// 13 Earth years have passed.
+// 54.16 Mercury years have passed.
+// 20.96 Venus years have passed.
+// 6.91 Mars years have passed.
+// 1.09 Jupiter years have passed

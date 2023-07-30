@@ -21,6 +21,15 @@ export class Person {
   }
 }
 
+export class YearsPassed {
+    constructor(current, past, total){
+    this.current = current;
+    this.past  = past;
+    this.total= total;
+    }
+    
+}
+
 
 
 
