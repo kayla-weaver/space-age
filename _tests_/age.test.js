@@ -85,7 +85,12 @@ describe ("FutureAge",() => {
         const user = new FutureAge(50,25,0);
         user.marsFuture();
         expect(user.total).toBe(47);
-    });   
+    }); 
+    it ("should return a year value to future year on jupiter", () => {
+        const user = new FutureAge(50,25,0);
+        user.jupiterFuture();
+        expect(user.total).toBe(296.5);
+    });     
 });
 
 
