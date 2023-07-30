@@ -15,6 +15,10 @@ export class Person {
     this.age = this.age * 1.88;
     return this.age;
   }
+  jupiter(){
+    this.age = this.age * 11.86;
+    return this.age;
+  }
 }
 
 
