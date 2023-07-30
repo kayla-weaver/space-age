@@ -71,6 +71,11 @@ describe ("FutureAge",() => {
         user.earthFuture();
         expect(user.total).toBe(user.future - user.current);
     });
+    it ("should return a year value to future year on mercury", () => {
+        const user = new FutureAge(50,25,0);
+        user.mercuryFuture();
+        expect(user.total).toBe(6);
+    });
 });
 
 
