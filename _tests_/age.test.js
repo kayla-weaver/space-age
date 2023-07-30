@@ -35,9 +35,9 @@ describe ("YearsPassed",() => {
         expect(user.past).toBe(15);
     })
     it ("should return years passed on earth", () => {
-    const user = new YearsPassed(25, 15, 0);
-    user.earthPast();
-    expect(user.total).toBe(user.current - user.past);
+        const user = new YearsPassed(25, 15, 0);
+        user.earthPast();
+        expect(user.total).toBe(user.current - user.past);
     })
     it ("should return years passed on mercury", () => {
         const user = new YearsPassed(25, 15, 0);

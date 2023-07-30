@@ -32,6 +32,11 @@ export class YearsPassed {
         this.total = (this.current-this.past);
         return this.total;
     }
+    mercuryPast(){
+        this.total = (this.current - this.past);
+        this.total = (this.total * .24);
+        return this.total;
+    }
 }
 
 
