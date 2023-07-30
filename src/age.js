@@ -47,6 +47,11 @@ export class YearsPassed {
         this.total = (this.total * 1.88);
         return this.total;
     }
+    jupiterPast(){
+        this.total = (this.current - this.past);
+        this.total = (this.total * 11.86);
+        return this.total;
+    }
 }
 
 
