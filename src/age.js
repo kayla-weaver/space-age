@@ -7,6 +7,10 @@ export class Person {
     this.age = this.age * .24;
     return this.age;
   }
+  venus(){
+    this.age = this.age * .62;
+    return this.age;
+  }
 }
 
 
