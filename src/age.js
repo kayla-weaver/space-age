@@ -2,6 +2,11 @@ export class Person {
   constructor(age){
     this.age = age;
   }
+
+  mercury(){
+    this.age = this.age * .24;
+    return this.age;
+  }
 }
 
 
