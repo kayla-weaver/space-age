@@ -10,6 +10,11 @@ describe ("Person",() => {
         user.mercury();
         expect(user.age).toBe(6);
 });
+     it ("should return venus age at current value", () => {
+    const user = new Person(25);  
+    user.venus();
+    expect(user.age).toBe(15.5);
+});
 })
 
 
