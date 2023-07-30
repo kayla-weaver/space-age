@@ -79,7 +79,7 @@ describe ("FutureAge",() => {
     it ("should return a year value to future year on venus", () => {
         const user = new FutureAge(50,25,0);
         user.venusFuture();
-        expect(user.total).toBe(34.5);
+        expect(user.total).toBe(15.5);
     });  
 });
 
