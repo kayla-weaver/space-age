@@ -74,6 +74,11 @@ export class FutureAge {
         this.total = this.total * .62;
         return this.total;
     }  
+    marsFuture(){
+        this.total = (this.future - this.current);
+        this.total = this.total * 1.88;
+        return this.total;
+    }   
 }
 
 
