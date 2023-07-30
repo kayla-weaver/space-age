@@ -15,6 +15,11 @@ describe ("Person",() => {
     user.venus();
     expect(user.age).toBe(15.5);
 });
+     it ("should return mars age at current value", () => {
+    const user = new Person(25);  
+    user.mars();
+    expect(user.age).toBe(47);
+});
 })
 
 
