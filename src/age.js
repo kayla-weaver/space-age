@@ -54,6 +54,14 @@ export class YearsPassed {
     }
 }
 
+export class Future {
+    constructor(future, current, total){
+        this.future = future;
+        this.current = current;
+        this.total = total;
+    }
+}
+
 
 
 
