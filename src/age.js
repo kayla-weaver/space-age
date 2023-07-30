@@ -79,6 +79,11 @@ export class FutureAge {
         this.total = this.total * 1.88;
         return this.total;
     }   
+    jupiterFuture(){
+        this.total = (this.future - this.current);
+        this.total = this.total * 11.86;
+        return this.total;
+    }    
 }
 
 
