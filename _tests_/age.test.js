@@ -67,7 +67,7 @@ describe ("FutureAge",() => {
         expect(user.current).toBe(25);
     });
     it ("should return a year value to future year on earth", () => {
-        const user = new Person(50,25,0);
+        const user = new FutureAge(50,25,0);
         user.earthFuture();
         expect(user.total).toBe(user.future - user.current);
     });
