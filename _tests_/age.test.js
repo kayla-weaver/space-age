@@ -54,6 +54,11 @@ describe ("YearsPassed",() => {
         user.marsPast();
         expect(user.total).toBe((user.current - user.past) * 1.88);
         })
+    it ("should return years passed on jupiter", () => {
+        const user = new YearsPassed(25, 15, 0);
+        user.jupiterPast();
+        expect(user.total).toBe((user.current - user.past) * 11.86);
+        })
 
      });
 
