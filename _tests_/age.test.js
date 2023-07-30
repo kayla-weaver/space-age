@@ -44,6 +44,11 @@ describe ("YearsPassed",() => {
         user.mercuryPast();
         expect(user.total).toBe((user.current - user.past) * .24);
         })
+        it ("should return years passed on venus", () => {
+            const user = new YearsPassed(25, 15, 0);
+            user.venusPast();
+            expect(user.total).toBe((user.current - user.past) * .62);
+            })
 
      });
 
