@@ -1,11 +1,11 @@
 import {Person} from "../src/age.js";
 
 describe ("Person",() => {
-    it ("should create a person class with an age value") {
+    it ("should create a person class with an age value", () => {
         const user = new Person(25);
         expect(user.age).toBe(25);
 
-    }
+    });
 })
 
 
