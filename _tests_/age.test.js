@@ -30,8 +30,14 @@ it ("should return jupiter age at current value", () => {
 
 describe ("YearsPassed",() => {
     it ("should create a YearsPassed class with value of years passed", () => {
-        const user = new Person(25);
-        expect(user.age).toBe(25);
+        const user = new YearsPassed(25, 15, 0);
+        expect(user.current).toBe(25);
+        expect(user.past).toBe(15);
+    })
+    it ("should return years passed on earth", () => {
+    const user = new YearsPassed(25, 15, 0);
+    user.earthPast();
+    expect(user.total).toBe(user.current - user.past);
     })
      });
 
