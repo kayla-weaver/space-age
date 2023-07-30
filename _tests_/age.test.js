@@ -36,27 +36,27 @@ describe ("YearsPassed",() => {
     it ("should return years passed on earth", () => {
         const user = new YearsPassed(25, 15, 0);
         user.earthPast();
-        expect(user.total).toBe(user.current - user.past);
+        expect(user.total).toBe(10);
     })
     it ("should return years passed on mercury", () => {
         const user = new YearsPassed(25, 15, 0);
         user.mercuryPast();
-        expect(user.total).toBe((user.current - user.past) * .24);
+        expect(user.total).toBe(2.4);
         })
     it ("should return years passed on venus", () => {
         const user = new YearsPassed(25, 15, 0);
         user.venusPast();
-        expect(user.total).toBe((user.current - user.past) * .62);
+        expect(user.total).toBe(6.2);
         })
     it ("should return years passed on mars", () => {
         const user = new YearsPassed(25, 15, 0);
         user.marsPast();
-        expect(user.total).toBe((user.current - user.past) * 1.88);
+        expect(user.total).toBe(18.799999999999997);
         })
     it ("should return years passed on jupiter", () => {
         const user = new YearsPassed(25, 15, 0);
         user.jupiterPast();
-        expect(user.total).toBe((user.current - user.past) * 11.86);
+        expect(user.total).toBe(118.6);
         })
      });
 
@@ -76,6 +76,11 @@ describe ("FutureAge",() => {
         user.mercuryFuture();
         expect(user.total).toBe(6);
     });
+    it ("should return a year value to future year on venus", () => {
+        const user = new FutureAge(50,25,0);
+        user.venusFuture();
+        expect(user.total).toBe(34.5);
+    });  
 });
 
 
