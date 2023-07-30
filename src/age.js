@@ -27,7 +27,11 @@ export class YearsPassed {
     this.past  = past;
     this.total= total;
     }
-    
+
+    earthPast(){
+        this.total = (this.current-this.past);
+        return this.total;
+    }
 }
 
 
