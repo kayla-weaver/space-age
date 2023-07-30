@@ -1,6 +1,4 @@
-import {Person} from "../src/age.js";
-import {YearsPassed} from "../src/age.js";
-import { Future } from "../src/age.js";
+import {Person, YearsPassed, FutureAge} from "../src/age.js";
 
 describe ("Person",() => {
     it ("should create a person class with an age value", () => {
@@ -62,12 +60,18 @@ describe ("YearsPassed",() => {
         })
      });
 
-     describe ("Future",() => {
-        it ("should create a future class with a year value", () => {
-            const user = new Person(25);
-            expect(user.age).toBe(25);
-         });
+describe ("FutureAge",() => {
+    it ("should create a future class with a year value", () => {
+        const user = new FutureAge(50, 25, 0);
+        expect(user.future).toBe(50);
+        expect(user.current).toBe(25);
     });
+    it ("should return a year value to future year on earth", () => {
+        const user = new Person(50,25,0);
+        user.earthFuture();
+        expect(user.total).toBe(user.future - user.current);
+    });
+});
 
 
 
