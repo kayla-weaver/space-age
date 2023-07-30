@@ -81,6 +81,11 @@ describe ("FutureAge",() => {
         user.venusFuture();
         expect(user.total).toBe(15.5);
     });  
+    it ("should return a year value to future year on mars", () => {
+        const user = new FutureAge(50,25,0);
+        user.marsFuture();
+        expect(user.total).toBe(47);
+    });   
 });
 
 
