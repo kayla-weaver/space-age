@@ -1,29 +1,43 @@
-# (Application Name)
+# Space Age
 
-#### (Brief Description of Application)
+#### Calcluate your age and years past/future on differnt planets!
 
-#### By (Your Name Here)
+#### By Kayla Weaver
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* Javascript
+* webpack
+* eslint
+* babel
 
 ## Description
+Lots of jest testing practice with this project!
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Open Terminal/Command line
+* Navigate to the desktop by typing cd ~/Desktop and press Enter on the keybord
+* type git clone https://github.com/kayla-weaver/space-age.git into the terminal and press Enter on the keyboard
+* Navigate to the top level of the directory by typing cd space-age and press Enter on the keyboard
+* type code . into the terminal and press Enter on the keyboard
+* Open the terminal in VSCode by pressing Ctrl + ` on the keyboard
+* type npm install into the terminal and press Enter on the keyboard
+* type npm run build into the terminal and press Enter on the keyboard
+* type npm run start into the terminal and press Enter on the keyboard
+* Delete all boilerplate content in index.html, index.js, and test files to customize for your project.
+
+* Delete all boilerplate content in index.html, index.js, and test files to customize for your project.
+
+* When ready to run tests, type npm run test into the terminal and press Enter on the keyboard (no tests exist at installation)
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No known bugs
 
 ## License
+
+If you encounter and problems with this site please feel free to reach out at kaylabeth1211@gmail.com
+
+Copyright(c) 2023 Kayla Weaver
